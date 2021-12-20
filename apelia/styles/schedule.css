@@ -1,0 +1,159 @@
+html{
+    background-image: url('../resources/images/background.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+body{
+    font: garamond, serif;    
+    width: 960px;
+    border-top: 3px solid #946e06;
+    border-left: 3px solid #946e06;
+    border-right: 3px solid #946e06;
+    box-shadow: 0px 0px 15px 15px black;
+    margin: auto; 
+/*    background-color: #e4c580;*/
+    background-color: #000714;
+    
+}
+
+h2{
+    color: #dedede;
+    text-decoration: none;
+    margin-right: 0;
+    padding-left: .5em;
+    padding-bottom: .5em;
+    background-color: #000714;
+}
+
+h3{
+    color: darkred;
+}
+
+main h1{
+    color: #000714;
+}
+
+main{
+    padding-top: 10px;
+    padding-bottom: 1em;
+    background-color: #946e06 ;
+    margin-top: .02em;
+
+}
+
+legend{
+    font-size: 200%;
+}
+
+/*SECTION*/
+section{
+    margin: auto;
+    width: 700px;
+    padding-bottom: 20px;  
+}
+
+table {
+    border: 1px solid #000714;
+    border-collapse: collapse;
+}
+td, th {
+    border: 3px solid #000714;
+    padding: .2em .1em .2em .5em;
+    text-align: left;
+}
+
+#container{
+    float: right;
+    width: 100%;
+}
+#floated{
+    float: left;
+    width: 40%;
+}
+
+/*ASIDE*/
+aside{
+    width: 300px;
+    float: left;
+    padding-left: 1em;
+    font-weight: bold;
+    background-color: #000714;
+    margin-right: 2em;
+    margin-top: .1em;
+    border-radius: 20px;
+    
+}
+
+aside ul{
+    margin: 2px;
+    list-style-type: none;
+}
+aside ul li a {
+    color: #212cff;
+    font-size: 120%;
+}
+
+aside li{
+    padding-bottom: .35em;   
+}
+
+/*NAVMENU */
+
+#asidenav{
+   position: relative;
+   display: inline-block;
+   text-align: center;
+}
+
+#asidenav ul li a{
+    display: block;
+    width: 200px;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-decoration: none;
+    color: #946e06;
+    font-weight: bold;
+}
+
+#asidenav ul li ul li{
+    display: none;
+    position: relative;
+    background-color: #f1f1f1;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: none;
+    font-size: large;
+    background-color: #946e06;
+    right: 20%;
+}
+#asidenav ul li:hover > ul li{
+    display: block;
+}
+#asidenav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#asidenav a:hover {
+    background-color: #dedede;
+}
+
+#avail legend {
+    background-color: black;
+    margin-bottom: .5em;
+    border-radius: 10px;
+}
+
+#avail table, td, th{
+    border: 2px solid #dedede;
+    color: black;
+    margin: auto;
+    padding: auto;
+}
+
+#avail th, td{
+    font-size: 110%;
+}
